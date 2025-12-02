@@ -19,7 +19,7 @@ public class Envios {
     public static int calcularTarifaBase(double peso) {
         int tarifaBase;
 
-        System.out.println("Calculando recargo por distancia...");
+        System.out.println("Calculando tarifa base...");
 
         if(peso <= 1) {
             tarifaBase = 5;
@@ -36,7 +36,7 @@ public class Envios {
     public static int calcularRecargoDistancia(int distancia) {
         int recargoDistancia;
 
-        System.out.println("Calculando recargo por tipo de envío...");
+        System.out.println("Calculando recargo por distancia...");
 
         if(distancia <= 10) {
             recargoDistancia = 0;
@@ -53,6 +53,8 @@ public class Envios {
 
     public static int calcularRecargoTipo(String tipoEnvio) {
         int recargoTipoEnvio = 0;
+
+        System.out.println("Calculando recargo por tipo de envío...");
 
         switch (tipoEnvio) {
             case "normal":

@@ -22,7 +22,6 @@ public class Main {
             esValidoPeso = Envios.verificarPeso(peso);
         } while(!esValidoPeso);
 
-        System.out.println("Calculando tarifa base...");
         tarifaBase = Envios.calcularTarifaBase(peso);
         System.out.println("La tarifa base del envío es de USD$" + tarifaBase);
 
